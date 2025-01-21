@@ -5,12 +5,12 @@ import { useCallback, useEffect, useRef } from "react";
 
 interface BackgroundProps {
   children: React.ReactNode;
+  gradientSize: number;
+  gradientColor: string;
+  className: string;
 }
 
-function Background({ children }: BackgroundProps) {
-  const gradientSize = 100;
-  const gradientColor = "#D9D9D955";
-
+function Background({ children, gradientColor, gradientSize, className }: BackgroundProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const mouseX = useMotionValue(-gradientSize);
   const mouseY = useMotionValue(-gradientSize);
@@ -63,9 +63,9 @@ function Background({ children }: BackgroundProps) {
   }, [gradientSize, mouseX, mouseY]);
 
   return (
-    <div ref={cardRef} className={"group relative flex size-full "}>
-      <div className="absolute inset-px z-10   bg-zinc-950 dark:bg-zinc-950" />
-      <div className="relative z-30">{children}</div>
+    <div ref={cardRef} className={"group relative flex size-full"}>
+      <div className="absolute inset-0 z-10 bg-white dark:bg-zinc-950" />
+      <div className={`relative z-30 ${className}`}>{children}</div>
       <motion.div
         className="pointer-events-none absolute inset-px z-10  opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         style={{
