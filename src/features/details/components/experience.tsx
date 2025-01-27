@@ -17,10 +17,10 @@ function Experience() {
           >
             <div className=" flex">
               <div className="w-[30%]">
-                <p className="text-slate-500 text-sm font-semibold">{exp.duration}</p>
+                <p className="text-slate-500 text-xs font-semibold">{exp.duration}</p>
               </div>
-              <div className="text-lg w-full flex flex-col gap-3">
-                <LinkComp url="" name={exp.company} className={`${hoveredIndex === i && "text-teal-300"}`} />
+              <div className="text-sm w-full flex flex-col gap-3">
+                <LinkComp url="" name={exp.company} className={`text-base ${hoveredIndex === i && "text-teal-300"}`} />
                 <p>{exp.works}</p>
                 <div className="flex gap-2 ">
                   {exp.stacks.map((s) => (

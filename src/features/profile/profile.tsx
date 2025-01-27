@@ -3,7 +3,7 @@ import ScrollEffect from "./components/scrollEffect";
 
 function Profile() {
   return (
-    <div className="py-24 w-full basis-[44%] flex flex-col items-start ">
+    <div className="py-24 w-full basis-[48%] flex flex-col items-start ">
       <div>
         <h1 className="dark:text-slate-200 text-slate-700  text-4xl font-bold tracking-tight">Garba Jamiu O.</h1>
         <h2 className="text-2xl text-slate-700 dark:text-slate-200">A Blockchain And Front end Developer</h2>
