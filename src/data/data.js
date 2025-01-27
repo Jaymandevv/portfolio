@@ -64,7 +64,7 @@ export const data = {
       title: "Wild Oasis",
       image_url: "/img/explorer.png",
       url: "https://the-wild-oasis-gilt-five.vercel.app/",
-      desciption: "",
+      desciption: "jajsk",
       stacks: ["React", "Vite", "Tailwind", "Supabase"],
       github_url: "https://github.com/Jaymandevv/the-wild-oasis",
     },
