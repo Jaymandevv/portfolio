@@ -8,7 +8,7 @@ interface LinkProps {
 
 function LinkComp({ url, name, className }: LinkProps) {
   return (
-    <Link className={`text-slate-100 hover:text-teal-300 ${className}`} href={url}>
+    <Link target="_blank" className={`text-slate-100 hover:text-teal-300 ${className}`} href={url}>
       {name}
     </Link>
   );

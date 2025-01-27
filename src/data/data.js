@@ -31,10 +31,51 @@ export const data = {
       stacks: ["Javascript", "HTML", "CSS"],
     },
   ],
-};
 
-// tags: text -> #5EEAD4  , bg -> bg-teal-400/10
-// subtile: #E2E8F0
-// desc: #94A3B8
-// Baground: .bg-slate-900
-// text: text-slate-400
+  projects: [
+    {
+      title: "Quiz app",
+      image_url: "/img/quiz-app-light.png",
+      desciption: "",
+      url: "https://quiz-app-jayman.vercel.app/",
+      stacks: ["React", "Tailwind", "Vercel", "Git"],
+      github_url: "https://github.com/Jaymandevv/Quiz-app",
+    },
+
+    {
+      title: "Airdrop Finder",
+      image_url: "/img/quiz-app-dark.png",
+      url: "",
+      description: "",
+      stacks: ["Next js", "React", "Tailwind", "vercel", "Git", "Supabase"],
+      github_url: "https://github.com/Jaymandevv/airdrop-finder",
+    },
+
+    {
+      title: "Rent A Ride",
+      image_url: "/img/rentaride.png",
+      url: "https://rent-a-ride-rust.vercel.app/",
+      description: "",
+      stacks: ["HTML", "CSS", "vercel", "Git", "Javascript"],
+      github_url: "https://github.com/Jaymandevv/Rentaride-project",
+    },
+
+    {
+      title: "Wild Oasis",
+      image_url: "/img/explorer.png",
+      url: "https://the-wild-oasis-gilt-five.vercel.app/",
+      desciption: "",
+      stacks: ["React", "Vite", "Tailwind", "Supabase"],
+      github_url: "https://github.com/Jaymandevv/the-wild-oasis",
+    },
+
+    {
+      title: "Nextearth Metaverse",
+      image_url: "/img/nextearth.png",
+      url: "https://nextearth-metaverse-project.vercel.app/",
+      description: "",
+      stacks: ["HTML", "CSS", "Vercel", "Git"],
+      github_url: "https://github.com/Jaymandevv/Nextearth-Metaverse-project",
+    },
+  ],
+};
