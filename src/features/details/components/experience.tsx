@@ -3,7 +3,7 @@ import { data } from "@/data/data";
 import { useState } from "react";
 
 function Experience() {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <div>
