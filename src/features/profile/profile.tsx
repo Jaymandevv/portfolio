@@ -1,47 +1,23 @@
 import { DockCM } from "../nav-dock";
-import { useScroll } from "@/components/ScrollProvider/provider";
+import ScrollEffect from "./components/scrollEffect";
 
 function Profile() {
-  const {activeSection} = useScroll();
-
-
-  console.log(activeSection, "active")
-
   return (
-    <div className="py-24 w-full basis-[48%] flex flex-col">
+    <div className="py-24 w-full basis-[44%] flex flex-col items-start ">
       <div>
-          <h1 className="text-slate-200 text-4xl font-bold tracking-tight">
-            Garba Jamiu O.
-          </h1>
-          <h2 className="text-2xl text-slate-200">
-                A Blockchain And Front end Developer
-          </h2>
+        <h1 className="dark:text-slate-200 text-slate-700  text-4xl font-bold tracking-tight">Garba Jamiu O.</h1>
+        <h2 className="text-2xl text-slate-700 dark:text-slate-200">A Blockchain And Front end Developer</h2>
 
-          <p>I build accessible, pixel-perfect digital experiences for the web.</p>
+        <p>I build accessible, pixel-perfect digital experiences for the web.</p>
       </div>
 
-      <div>
-      {["about", "project"].map((id) => (
-        <div
-          key={id}
-          id={id}
-          style={{
-            // height: "100vh",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontSize: "24px",
-            // border: "1px solid black",
-            color: activeSection === id ? "red" : "white",
-            fontWeight: activeSection === id ? "bold" : "normal",
-          }}
-        >
-            {id}
-        </div>
-      ))}
-    </div>
+      <div className="mt-20">
+        <ScrollEffect />
+      </div>
 
-      <DockCM />
+      <div className="mt-auto pb-8">
+        <DockCM />
+      </div>
     </div>
   );
 }

@@ -1,31 +1,24 @@
-"use client"
+"use client";
 
 import { createContext, Dispatch, SetStateAction, useContext, useState } from "react";
 
 interface ScrollContextProps {
-     activeSection: string;
-     setActiveSection: Dispatch<SetStateAction<string>>;
+  activeSection: string;
+  setActiveSection: Dispatch<SetStateAction<string>>;
 }
-
 
 const ScrollContext = createContext<ScrollContextProps>({
-     activeSection: "",
-     setActiveSection: () => {}
+  activeSection: "",
+  setActiveSection: () => {},
 });
 
+export function ScrollContextProvider({ children }: { children: React.ReactNode }) {
+  const [activeSection, setActiveSection] = useState("about");
 
-
-export  function ScrollContextProvider({children}: {children: React.ReactNode}) {
-     const [activeSection, setActiveSection] = useState("");
-
-  
-
-     return <ScrollContext.Provider value={{activeSection, setActiveSection}}>{children}</ScrollContext.Provider>
+  return <ScrollContext.Provider value={{ activeSection, setActiveSection }}>{children}</ScrollContext.Provider>;
 }
 
-
-
 export function useScroll() {
-     const context = useContext(ScrollContext);
-     return context
+  const context = useContext(ScrollContext);
+  return context;
 }

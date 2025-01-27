@@ -80,7 +80,7 @@ const DATA = {
 
 export function DockCM() {
   return (
-    <div className="relative flex pb-8 w-full flex-col items-center justify-center overflow-hidden rounded-lg mt-auto">
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg">
       <TooltipProvider>
         <Dock
           direction="middle"
