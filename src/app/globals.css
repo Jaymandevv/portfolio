@@ -35,7 +35,7 @@ body {
     --radius: 0.5rem;
   }
   .dark {
-    --background:#0e172a;
+    --background: #0e172a;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -63,7 +63,15 @@ body {
 }
 
 @layer base {
- 
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    margin: 0;
+    padding: 0;
+  }
+
   body {
     @apply bg-background text-foreground;
   }

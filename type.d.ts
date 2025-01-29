@@ -8,6 +8,18 @@ interface IExperienceItems {
     stacks: Tstacks;
   };
   index: number;
+  hoveredIndex: number | null;
 }
 
-interface IProjects {}
+interface IProjects {
+  project: {
+    title: string;
+    image_url: string;
+    desciption: string;
+    url: string;
+    stacks: Tstacks;
+    github_url: string;
+  };
+  hoveredIndex: number | null;
+  index: number;
+}

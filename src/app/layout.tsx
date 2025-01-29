@@ -19,7 +19,7 @@ import { ScrollContextProvider } from "@/components/ScrollProvider/provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Garba Jamiu",
   description: "My portfolio",
 };
 
