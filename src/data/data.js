@@ -1,7 +1,7 @@
 export const data = {
   profile: {
     name: "Garba Jamiu",
-    job: "Blockchain and Frontend developer",
+    job: "Frontend developer",
     sub_title: "I build accessible, pixel-perfect digital experiences for the web.",
   },
 

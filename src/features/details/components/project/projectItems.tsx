@@ -5,7 +5,7 @@ import Image from "next/image";
 function ProjectItems({ project, index, hoveredIndex }: IProjects) {
   return (
     <div className="flex gap-4">
-      <div className="relative h-20 w-32 mt-2 rounded-sm ring-2 ring-red-400 overflow-hidden bg-black basis-[30%] ">
+      <div className="relative h-20 w-32 mt-2 rounded-sm ring-2 ring-red-400 overflow-hidden bg-black lg:basis-[30%] ">
         <Image src={project.image_url} className="object-cover" fill alt="project image" />
       </div>
       <div className="w-full justify-self-start space-y-2">
