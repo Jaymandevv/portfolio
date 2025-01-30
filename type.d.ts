@@ -15,7 +15,7 @@ interface IProjects {
   project: {
     title: string;
     image_url: string;
-    desciption: string;
+    desciption?: string;
     url: string;
     stacks: Tstacks;
     github_url: string;
