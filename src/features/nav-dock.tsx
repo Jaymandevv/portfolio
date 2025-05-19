@@ -56,22 +56,22 @@ const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "#",
+        url: "https://github.com/Jaymandevv",
         icon: Icons.github,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "#",
+        url: "https://www.linkedin.com/in/jamiu-garba-468659231/",
         icon: Icons.linkedin,
       },
       X: {
         name: "X",
-        url: "#",
+        url: "https://x.com/jaymandev",
         icon: Icons.x,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "garbajamiu2000@gmail.com",
         icon: Icons.email,
       },
     },
@@ -80,7 +80,7 @@ const DATA = {
 
 export function DockCM() {
   return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg">
+    <div className="relative max-w-max flex w-full flex-col items-center justify-center overflow-hidden rounded-lg">
       <TooltipProvider>
         <Dock
           direction="middle"
@@ -90,7 +90,7 @@ export function DockCM() {
             <DockIcon key={item.label}>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Link href={item.href} aria-label={item.label} className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "size-12 rounded-full")}>
+                  <Link href={item.href} target="_blank" aria-label={item.label} className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "size-12 rounded-full")}>
                     <item.icon className="size-4" />
                   </Link>
                 </TooltipTrigger>
@@ -105,7 +105,12 @@ export function DockCM() {
             <DockIcon key={name}>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Link href={social.url} aria-label={social.name} className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "size-12 rounded-full")}>
+                  <Link
+                    href={name === "email" ? `mailto:${social.url}` : social.url}
+                    target="_blank"
+                    aria-label={social.name}
+                    className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "size-12 rounded-full")}
+                  >
                     <social.icon className="size-4" />
                   </Link>
                 </TooltipTrigger>

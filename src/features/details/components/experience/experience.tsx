@@ -7,7 +7,9 @@ function Experience() {
 
   return (
     <div className="space-y-3">
-      <h2 className="text-lg text-slate-200 lg:hidden">Experience</h2>
+      <header className="sticky top-0 bg-[#0e172a]/80 backdrop-blur-md p-2 z-20 lg:hidden">
+        <h2 className="text-lg text-slate-200">EXPERIENCE</h2>
+      </header>
       <ol className="flex flex-col gap-4 justify-start">
         {data.experience.map((exp, index) => (
           <li

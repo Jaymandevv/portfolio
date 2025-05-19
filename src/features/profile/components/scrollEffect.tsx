@@ -3,7 +3,7 @@ import { useScroll } from "@/components/ScrollProvider/provider";
 function ScrollEffect() {
   const { activeSection } = useScroll();
 
-  console.log(activeSection, "active");
+  console.log(activeSection, "active section");
 
   return (
     <div className="flex flex-col gap-6">
