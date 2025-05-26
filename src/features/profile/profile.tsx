@@ -20,7 +20,7 @@ function Profile() {
         <ScrollEffect />
       </div>
 
-      <div className="fixed self-center bottom-2 lg:mt-auto lg:pb-8 lg:self-start lg:relative">
+      <div className="z-[9999] fixed self-center bottom-2 lg:mt-auto lg:pb-8 lg:self-start lg:relative">
         <DockCM />
       </div>
     </div>

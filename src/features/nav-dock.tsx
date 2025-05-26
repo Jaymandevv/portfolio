@@ -120,7 +120,7 @@ export function DockCM() {
               </Tooltip>
             </DockIcon>
           ))}
-          <Separator orientation="vertical" className="h-full py-2" />
+          {/* <Separator orientation="vertical" className="h-full py-2" />
           <DockIcon>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -130,7 +130,7 @@ export function DockCM() {
                 <p>Theme</p>
               </TooltipContent>
             </Tooltip>
-          </DockIcon>
+          </DockIcon> */}
         </Dock>
       </TooltipProvider>
     </div>
