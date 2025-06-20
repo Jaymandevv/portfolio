@@ -36,7 +36,8 @@ export const data = {
     {
       title: "Quiz app",
       image_url: "/img/quiz-app-light.png",
-      desciption: "",
+      desciption:
+        " A simple app that allow you choose from options quizes like Javascript, HTML, CSS, and Accessibility. You can only choose and solve at a time and also view your score at the end of the quiz.",
       url: "https://quiz-app-jayman.vercel.app/",
       stacks: ["React", "Tailwind", "Vercel", "Git"],
       github_url: "https://github.com/Jaymandevv/Quiz-app",
