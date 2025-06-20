@@ -10,9 +10,7 @@ function ProjectItems({ project, index, hoveredIndex }: IProjects) {
       </div>
       <div className="w-full justify-self-start space-y-2">
         <LinkComp url={project.url} name={project.title} className={`text-base ${hoveredIndex === index && "text-teal-300"}`} />
-        <p className="text-sm">
-          A simple app that allow you choose from options quizes like Javascript, HTML, CSS, and Accessibility. You can only choose and solve at a time and also view your score at the end of the quiz.
-        </p>
+        <p className="text-sm">{project.description}</p>
         <div>
           <Tags items={project.stacks} />
         </div>

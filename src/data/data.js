@@ -36,7 +36,7 @@ export const data = {
     {
       title: "Quiz app",
       image_url: "/img/quiz-app-light.png",
-      desciption:
+      description:
         " A simple app that allow you choose from options quizes like Javascript, HTML, CSS, and Accessibility. You can only choose and solve at a time and also view your score at the end of the quiz.",
       url: "https://quiz-app-jayman.vercel.app/",
       stacks: ["React", "Tailwind", "Vercel", "Git"],
@@ -47,7 +47,8 @@ export const data = {
       title: "Airdrop Finder",
       image_url: "/img/quiz-app-dark.png",
       url: "",
-      description: "",
+      description:
+        "A web platform designed to help users discover and track the latest crypto airdrops. It features real-time listings, project details, eligibility requirements, and direct links to claim opportunities. Built with a responsive UI and optimized for performance, the site makes it easy for users to stay ahead in the Web3 space.",
       stacks: ["Next js", "React", "Tailwind", "vercel", "Git", "Supabase"],
       github_url: "https://github.com/Jaymandevv/airdrop-finder",
     },
@@ -56,7 +57,8 @@ export const data = {
       title: "Rent A Ride",
       image_url: "/img/rentaride.png",
       url: "https://rent-a-ride-rust.vercel.app/",
-      description: "",
+      description:
+        "A modern, responsive landing page designed for a vehicle rental service. It features a clean layout, intuitive booking section, location-based search, and call-to-action elements to maximize conversions. The page highlights key offerings like daily deals, vehicle categories, and customer testimonials—optimized for both desktop and mobile users.",
       stacks: ["HTML", "CSS", "vercel", "Git", "Javascript"],
       github_url: "https://github.com/Jaymandevv/Rentaride-project",
     },
@@ -65,7 +67,8 @@ export const data = {
       title: "Wild Oasis",
       image_url: "/img/explorer.png",
       url: "https://the-wild-oasis-gilt-five.vercel.app/",
-      desciption: "jajsk",
+      description:
+        "A fully responsive hotel booking website that allows users to search, browse, and reserve accommodations with ease. The platform features real-time availability, filtering by location, price, and amenities, and a seamless booking flow. Admin functionality includes room management and booking tracking, while users can view details, leave reviews, and manage their reservations.",
       stacks: ["React", "Vite", "Tailwind", "Supabase"],
       github_url: "https://github.com/Jaymandevv/the-wild-oasis",
     },
@@ -74,7 +77,8 @@ export const data = {
       title: "Nextearth Metaverse",
       image_url: "/img/nextearth.png",
       url: "https://nextearth-metaverse-project.vercel.app/",
-      description: "",
+      description:
+        "A sleek, static website built for showcasing the NextEarth virtual land platform. The site highlights key features of the metaverse ecosystem, including land ownership, token utility, and sustainability initiatives.",
       stacks: ["HTML", "CSS", "Vercel", "Git"],
       github_url: "https://github.com/Jaymandevv/Nextearth-Metaverse-project",
     },
