@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} text-slate-900 dark:text-slate-400  h-screen  antialiased`}>
         <ScrollContextProvider>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
             <Background gradientSize={400} className="w-[950px] xl:w-[1250px] mx-auto">
               {children}
             </Background>
