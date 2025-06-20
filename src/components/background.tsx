@@ -16,7 +16,7 @@ function Background({ children, gradientSize, className }: BackgroundProps) {
   const mouseX = useMotionValue(-gradientSize);
   const mouseY = useMotionValue(-gradientSize);
   const { theme } = useTheme();
-  const gradientColor = theme === "dark" ? "#1e293b" : "#eee";
+  const gradientColor = "#1e293b";
 
   console.log(theme);
 
