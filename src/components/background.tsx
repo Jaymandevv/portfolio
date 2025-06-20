@@ -72,11 +72,12 @@ function Background({ children, gradientSize, className }: BackgroundProps) {
       <div className="absolute inset-0 z-10 " />
       <div className={`relative z-30 ${className}`}>{children}</div>
       <motion.div
-        className="pointer-events-none absolute inset-px z-10  lg:opacity-0 lg:transition-opacity duration-300 lg:group-hover:opacity-100"
+        className="pointer-events-none absolute inset-px z-10 opacity-0 lg:opacity-0 lg:transition-opacity duration-300 lg:group-hover:opacity-100"
         style={{
           background: useMotionTemplate`
              radial-gradient(${gradientSize}px circle at ${mouseX}px ${mouseY}px, ${gradientColor}, transparent 100%)
            `,
+
           // opacity: gradientOpacity,˚
         }}
       />

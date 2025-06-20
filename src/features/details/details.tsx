@@ -39,7 +39,7 @@ function Details() {
           </section>
         ))}
       </div>
-      <div className="lg:pl-6 space-y-10 lg:space-y-20">
+      <div className="lg:pl-12 space-y-10 lg:space-y-20">
         <LinkComp className="!mt-5" name="View Full Résumé" url="https://drive.google.com/file/d/1q4nies91g51C0na2Vtt2AZ8ygQIkwIXD/view?usp=drive_link" />
 
         <footer className="!mb-10 text-sm lg:mr-48 ">

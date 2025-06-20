@@ -6,7 +6,7 @@ function About() {
 
   return (
     <div className="space-y-4">
-      <header className="sticky !m-0 top-0 bg-[#0e172a]/80 backdrop-blur-md p-2 z-20 lg:hidden">
+      <header className="sticky !m-0 top-0 bg-[#0e172a]/80 backdrop-blur-md py-2 z-20 lg:hidden">
         <h2 className="text-lg text-slate-200 ">ABOUT</h2>
       </header>
       <div className="space-y-6 leading-8 lg:pl-6 text-base">
